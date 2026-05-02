@@ -10,13 +10,7 @@ export const metadata: Metadata = {
 export default function HipThrustArticle() {
   return (
     <>
-      <header style={{ padding: '1.5rem 0', background: 'rgba(255, 255, 255, 0.9)', borderBottom: '1px solid var(--color-border)' }}>
-        <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <Link href="/" style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--color-primary)', textDecoration: 'none' }}>
-            🍑 桃尻研究所
-          </Link>
-        </div>
-      </header>
+      
 
       <main className={styles.articleContainer}>
         <nav className={styles.breadcrumb}>
@@ -113,13 +107,7 @@ export default function HipThrustArticle() {
         </article>
       </main>
 
-      <footer style={{ padding: '3rem 0', background: 'var(--color-surface)', textAlign: 'center', borderTop: '1px solid var(--color-border)' }}>
-        <div className="container">
-          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>
-            © {new Date().getFullYear()} 桃尻研究所. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      
     </>
   );
 }

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { M_PLUS_Rounded_1c } from "next/font/google";
 import "./globals.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const mPlusRounded = M_PLUS_Rounded_1c({
   weight: ["400", "700", "800"],
@@ -21,7 +23,9 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={mPlusRounded.className}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -4,18 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className={styles.main}>
-      <header className={styles.header}>
-        <div className={`${styles.headerContent} container`}>
-          <div className={styles.logo}>
-            🍑 桃尻研究所
-          </div>
-          <nav>
-            <Link href="#about" className="btn-primary" style={{ padding: '8px 20px', fontSize: '0.9rem' }}>
-              はじめる
-            </Link>
-          </nav>
-        </div>
-      </header>
+
 
       <main>
         <section className={styles.hero}>
@@ -60,6 +49,24 @@ export default function Home() {
                   <article className={styles.card}>
                     <h3 className={styles.cardTitle}>家でできるバンドトレーニング</h3>
                     <p className={styles.cardDesc}>ジムに行かなくてもできる、レジスタンスバンドを使った簡単メニュー。</p>
+                  </article>
+                </Link>
+                <Link href="/articles/bulgarian-squat" style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <article className={styles.card}>
+                    <h3 className={styles.cardTitle}>ブルガリアンスクワットのコツ</h3>
+                    <p className={styles.cardDesc}>前ももばかり太くなる原因と、お尻に効かせる魔法のフォーム調整。</p>
+                  </article>
+                </Link>
+                <Link href="/articles/protein-timing" style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <article className={styles.card}>
+                    <h3 className={styles.cardTitle}>プロテインを飲むタイミング</h3>
+                    <p className={styles.cardDesc}>トレーニング後や間食など、お尻を育てる最高のタイミングを解説。</p>
+                  </article>
+                </Link>
+                <Link href="/articles/gluteus-medius" style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <article className={styles.card}>
+                    <h3 className={styles.cardTitle}>中臀筋と「ピーマン尻」</h3>
+                    <p className={styles.cardDesc}>お尻の横のへこみが気になる方に。中臀筋の役割と解消法。</p>
                   </article>
                 </Link>
               </div>
@@ -123,16 +130,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <div className="container">
-          <p className={styles.footerText}>
-            © {new Date().getFullYear()} 桃尻研究所. All rights reserved.
-          </p>
-          <p className={styles.footerText} style={{ marginTop: '0.5rem', fontSize: '0.8rem' }}>
-            当サイトはヒップアップに関する情報を提供するメディアです。
-          </p>
-        </div>
-      </footer>
+
     </div>
   );
 }

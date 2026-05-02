@@ -96,3 +96,15 @@
   text-align: center;
   margin: 2.5rem 0;
 }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  .content h2 {
+    font-size: 1.4rem;
+  }
+  .content {
+    font-size: 1rem;
+  }
+}
