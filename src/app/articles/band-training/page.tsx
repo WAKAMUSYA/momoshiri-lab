@@ -1,0 +1,129 @@
+import styles from "../anatomy/page.module.css";
+import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "家でできるバンドトレーニング | 桃尻研究所",
+  description: "ジムに行けなくても大丈夫。1本のレジスタンスバンドを使って、お尻の筋肉（大臀筋・中臀筋）にしっかり効かせる宅トレメニューを優しく解説します。",
+};
+
+export default function BandTrainingArticle() {
+  return (
+    <>
+      <header style={{ padding: '1.5rem 0', background: 'rgba(255, 255, 255, 0.9)', borderBottom: '1px solid var(--color-border)' }}>
+        <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <Link href="/" style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--color-primary)', textDecoration: 'none' }}>
+            🍑 桃尻研究所
+          </Link>
+        </div>
+      </header>
+
+      <main className={styles.articleContainer}>
+        <nav className={styles.breadcrumb}>
+          <Link href="/">ホーム</Link> {'>'} <Link href="/#about">トレーニング</Link> {'>'} 家でできるバンドトレーニング
+        </nav>
+
+        <article>
+          <header className={styles.articleHeader}>
+            <span className={styles.categoryLabel}>🏋️‍♀️ トレーニング</span>
+            <h1 className={styles.title}>家でできるバンドトレーニング：ジムに行けなくてもお尻は育つ</h1>
+            <div className={styles.meta}>
+              <span>公開日: 2026.05.02</span>
+              <span>更新日: 2026.05.02</span>
+            </div>
+          </header>
+
+          <div className={styles.heroImage}>
+            [ 画像プレースホルダー: 部屋でレジスタンスバンドを使ってトレーニングをしている女性の図解 ]
+          </div>
+
+          <div className={styles.content}>
+            <p>
+              「お尻を鍛えたいけど、ジムに通う時間がない…」<br />
+              「自重のスクワットだけだと、なんだか物足りなくなってきた…」<br />
+              <br />
+              仕事や家事で忙しい毎日の中で、トレーニングの時間を確保するのは本当に大変ですよね。
+            </p>
+            <p>
+              そんな方にぜひおすすめしたいのが、<b>「レジスタンスバンド（トレーニングチューブ）」</b>を使った宅トレです。
+              薄くて軽いゴム製のバンドですが、実はお尻の筋肉（特に大臀筋と中臀筋）をピンポイントで刺激するのに、とても理にかなった素晴らしいアイテムなんです。
+            </p>
+            <p>
+              今日は、自宅のちょっとしたスペースで、安全かつ効果的にお尻を追い込むためのバンドトレーニングをご紹介します。
+            </p>
+
+            <div className={styles.adPlaceholderInArticle}>
+              [広告] 記事内広告 (インフィード)
+            </div>
+
+            <h2>なぜバンドがお尻に効くのか？</h2>
+            <p>
+              ダンベルやバーベルなどの重りは「下に向かって（重力で）」負荷がかかりますが、バンドは「ゴムが縮もうとする方向」に負荷がかかります。
+            </p>
+            <p>
+              特に、お尻の横側にある<b>中臀筋（ちゅうでんきん）</b>という筋肉は、「脚を横に開く」ときに強く働きます。
+              膝の少し上にバンドを巻いて脚を開く動きは、この中臀筋にダイレクトに抵抗をかけることができるため、ヒップの「丸み」や「横のくぼみ」を改善するのにとても効果的です。
+            </p>
+
+            <h2>現場でよくある「もったいない」バンドの使い方</h2>
+            <p>
+              バンドトレーニングをするときに、一つだけ気をつけていただきたいポイントがあります。それは、<b>「ゴムの縮む力に負けて、勢いよく脚を戻してしまうこと」</b>です。
+            </p>
+            <p>
+              筋肉は、力を入れながら「ゆっくり伸ばされるとき」に一番成長しやすくなります。
+              脚を開いた後、パタン！と勢いよく閉じるのではなく、<b>バンドの張力に耐えながら「３秒かけてゆっくり戻す」</b>ことを意識してみてください。これだけで、効き目が何倍にもなる可能性がありますよ。
+            </p>
+
+            <div className={styles.adPlaceholderInArticle}>
+              [広告] 記事内広告 (インフィード)
+            </div>
+
+            <h2>今日からできる！おすすめバンドメニュー２選</h2>
+            
+            <h3>1. クラムシェル（中臀筋ターゲット）</h3>
+            <p>
+              お尻の横側を鍛え、ピーマン尻（横がへこんだお尻）の改善に役立つ種目です。
+            </p>
+            <ol>
+              <li>両膝の少し上にバンドを巻き、横向きに寝転がります。</li>
+              <li>膝を軽く曲げ、かかと同士をくっつけた状態にします。</li>
+              <li>かかとを離さずに、上の膝をゆっくりと開きます。（貝殻が開くようなイメージです）</li>
+              <li>開ききったらお尻の横側がキュッと硬くなるのを感じて、<b>3秒かけてゆっくり</b>閉じます。</li>
+            </ol>
+            <p>
+              ※ポイント：骨盤が後ろに倒れないように、体幹はまっすぐキープしましょう。
+            </p>
+
+            <h3>2. バンド付きヒップリフト（大臀筋ターゲット）</h3>
+            <p>
+              お尻のメインである大臀筋を鍛え、ヒップの「高さ」を出していく種目です。
+            </p>
+            <ol>
+              <li>仰向けになり、膝を立てます。バンドは膝の少し上に巻きます。</li>
+              <li>足幅を肩幅より少し広めに開き、常にバンドが少しピンと張っている状態を作ります。</li>
+              <li>かかとで床を押し、お尻を高く持ち上げます。</li>
+              <li>上で1秒キープしてお尻をギュッと締めたら、ゆっくりと下ろします。</li>
+            </ol>
+            <p>
+              ※ポイント：お尻を上げるときに、膝が内側に閉じてしまわないように、バンドを外に押し返す力を常に意識してくださいね。
+            </p>
+
+            <p>
+              <b>【最後に】</b><br />
+              バンドは数百円から買える手軽なアイテムですが、使い方次第でジム顔負けのトレーニングができます。
+              まずは週に2回、テレビを見ながらでも構いません。ご自身のペースで、お尻がじんわり熱くなる感覚を楽しんでみてくださいね。
+            </p>
+          </div>
+        </article>
+      </main>
+
+      <footer style={{ padding: '3rem 0', background: 'var(--color-surface)', textAlign: 'center', borderTop: '1px solid var(--color-border)' }}>
+        <div className="container">
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>
+            © {new Date().getFullYear()} 桃尻研究所. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </>
+  );
+}

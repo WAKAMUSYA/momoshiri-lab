@@ -1,0 +1,98 @@
+.articleContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 24px 6rem;
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.breadcrumb a {
+  color: var(--color-primary);
+}
+
+.articleHeader {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.categoryLabel {
+  display: inline-block;
+  background: var(--color-primary-light);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  color: var(--color-text-main);
+}
+
+.meta {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.heroImage {
+  width: 100%;
+  border-radius: var(--border-radius-lg);
+  margin-bottom: 3rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-text-main);
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 3rem 0 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-border);
+  color: var(--color-primary);
+}
+
+.content p {
+  margin-bottom: 1.5rem;
+}
+
+.content ul {
+  margin: 0 0 1.5rem 2rem;
+  padding: 0;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+}
+
+.adPlaceholderInArticle {
+  background: #f9f9f9;
+  border: 2px dashed #e0e0e0;
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 0.9rem;
+  padding: 1rem;
+  min-height: 150px;
+  text-align: center;
+  margin: 2.5rem 0;
+}

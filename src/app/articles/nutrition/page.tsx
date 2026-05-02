@@ -1,0 +1,125 @@
+import styles from "../anatomy/page.module.css";
+import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "食事で変わるお尻の丸み | 桃尻研究所",
+  description: "お尻の筋肉（大臀筋）を育てるための食事の基本。プロテインやカロリーの考え方を、女性の体作りに寄り添いながら優しく解説します。",
+};
+
+export default function NutritionArticle() {
+  return (
+    <>
+      <header style={{ padding: '1.5rem 0', background: 'rgba(255, 255, 255, 0.9)', borderBottom: '1px solid var(--color-border)' }}>
+        <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <Link href="/" style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--color-primary)', textDecoration: 'none' }}>
+            🍑 桃尻研究所
+          </Link>
+        </div>
+      </header>
+
+      <main className={styles.articleContainer}>
+        <nav className={styles.breadcrumb}>
+          <Link href="/">ホーム</Link> {'>'} <Link href="/#about">栄養・食事</Link> {'>'} 食事で変わるお尻の丸み
+        </nav>
+
+        <article>
+          <header className={styles.articleHeader}>
+            <span className={styles.categoryLabel}>🥗 栄養・食事</span>
+            <h1 className={styles.title}>食事で変わるお尻の丸み：頑張りを無駄にしないための栄養学</h1>
+            <div className={styles.meta}>
+              <span>公開日: 2026.05.02</span>
+              <span>更新日: 2026.05.02</span>
+            </div>
+          </header>
+
+          <div className={styles.heroImage}>
+            [ 画像プレースホルダー: バランスの良い食事（お肉、野菜、炭水化物）とお尻の成長をイメージした図解 ]
+          </div>
+
+          <div className={styles.content}>
+            <p>
+              「週に2回もジムに行っているのに、なかなかお尻が大きくならない…」<br />
+              「ダイエットのためにサラダばかり食べているけれど、これでいいのかな？」<br />
+              <br />
+              トレーニングを頑張っているのに、思うような結果が出ないと不安になりますよね。
+            </p>
+            <p>
+              実は、お尻の丸みを作る（＝筋肉を育てる）ためには、トレーニングと同じくらい「食事」が大切です。
+              どんなに素晴らしい設計図（トレーニング）があっても、家を建てるための木材（栄養）がなければ、家（筋肉）は建ちません。
+            </p>
+            <p>
+              今日は、せっかくのあなたの努力をしっかりと結果に結びつけるための、食事の基本についてお話ししていきますね。
+            </p>
+
+            <div className={styles.adPlaceholderInArticle}>
+              [広告] 記事内広告 (インフィード)
+            </div>
+
+            <h2>現場でよくある「もったいない食事」の落とし穴</h2>
+            <p>
+              ヒップアップを目指す女性の中で、とても多い「もったいないケース」があります。それは、<b>「体重を気にするあまり、食べる量を減らしすぎてしまうこと」</b>です。
+            </p>
+            <p>
+              お尻の主役である「大臀筋」は、人間の体の中でもトップクラスに大きな筋肉です。この大きな筋肉を新しく作り出すには、実はたくさんのエネルギーが必要です。
+            </p>
+            <p>
+              もし、体に入ってくるエネルギー（食事）が少なすぎるとどうなるでしょうか？
+              体は「エネルギーが足りないから、いまある筋肉を分解してエネルギーにしよう」という緊急モードに入ってしまう可能性があります。つまり、頑張ってトレーニングをしているのに、逆にお尻の筋肉が細くなってしまうかもしれないのです。
+            </p>
+
+            <h2>お尻を育てる2つのキーワード：タンパク質と糖質</h2>
+            <p>
+              それでは、具体的に何を意識して食べればいいのか。まずは、難しく考えずに以下の2つだけを意識してみてください。
+            </p>
+
+            <h3>1. 筋肉の材料になる「タンパク質」</h3>
+            <p>
+              筋肉の直接的な材料になるのがタンパク質です。お肉、お魚、卵、大豆製品などに多く含まれていますね。
+            </p>
+            <p>
+              目安として、<b>「ご自身の体重 × 1.2g 〜 1.5g」</b>程度のタンパク質を1日で摂ることを目標にしてみてください。
+              （体重50kgの方なら、1日60g〜75g程度です。）
+            </p>
+            <p>
+              「毎食お肉を食べるのは大変…」という方は、間食にプロテインを取り入れるのも素晴らしい選択肢です。プロテインは魔法の薬ではなく、単なる「便利なタンパク質源」なので、ライフスタイルに合わせて無理なく活用してくださいね。
+            </p>
+
+            <h3>2. トレーニングの原動力になる「糖質（炭水化物）」</h3>
+            <p>
+              「炭水化物を食べると太る」というイメージがあるかもしれませんが、お尻を育てるためには必要不可欠な味方です。
+            </p>
+            <p>
+              ご飯やパンなどの糖質は、体を動かすガソリンになります。ガソリンが満タンだからこそ、トレーニングで重いものを持ち上げたり、しっかりお尻を追い込んだりすることができます。
+              特にトレーニングの数時間前や、トレーニング後には、おにぎり1個程度でも良いので炭水化物を摂ることをおすすめします。
+            </p>
+
+            <div className={styles.adPlaceholderInArticle}>
+              [広告] 記事内広告 (インフィード)
+            </div>
+
+            <h2>完璧を目指さなくて大丈夫です</h2>
+            <p>
+              「あれもこれも食べなきゃダメ」と思うと、少し疲れてしまいますよね。
+            </p>
+            <p>
+              まずは、「朝ごはんにゆで卵を1つ追加してみよう」「トレーニング前には小さなおにぎりを食べよう」といった、小さなステップからで十分です。
+              あなたの体は、食べたものから作られています。少しの意識の変化が、数ヶ月後のきれいな丸みとなって表れるはずですよ。
+            </p>
+            <p>
+              焦らず、食事を楽しみながら体づくりを進めていきましょうね。
+            </p>
+          </div>
+        </article>
+      </main>
+
+      <footer style={{ padding: '3rem 0', background: 'var(--color-surface)', textAlign: 'center', borderTop: '1px solid var(--color-border)' }}>
+        <div className="container">
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>
+            © {new Date().getFullYear()} 桃尻研究所. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </>
+  );
+}
